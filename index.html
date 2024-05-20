@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  /* Custom CSS */
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar-custom {
+    background-color: #333;
+  }
+
+  .navbar-custom .navbar-brand,
+  .navbar-custom .navbar-nav .nav-link {
+    color: #fff;
+  }
+
+  .header-section {
+    text-align: center;
+    padding: 5px;
+    background: #6c757d;
+    color: white;
+    opacity: 80%;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
+  .portfolio-item {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  #warning{
+    color:rgb(200, 8, 8);
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+  img{
+    height: 25%;
+    width: 25%;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="container">
+    <a class="navbar-brand" href="#">Advanced Android App Development</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Apps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#class">About the class</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#teams">About the teams</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header Section -->
+<header class="header-section">
+  <div class="container">
+    <h3>Welcome to the Stratford Prep Android App Gallery</h3>
+    <p>Come see what students have been working on!</p>
+    <p>-----------------------</p>
+    <p id="warning">CAUTION: THESE APPS ARE FOR *TESTING PURPOSES ONLY*</p>
+    <p id="warning">DOWNLOAD AND INSTALL AT YOUR OWN RISK</p>
+    <p>INSTRUCTIONS: click to download -> locate in Files -> install!</p>
+  </div>
+</header>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 portfolio-item text-center">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="dish_finder.png" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Dish Finder</h4>
+          <p class="text-muted">An app that uses AI to find dishes and recipes</p>
+          <p class="text-muted">Written by: Aditya Baheti and Nihar Bhatt</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item text-center">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="dish_finder.png" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Mem-Rise</h4>
+          <p class="text-muted">Uses AI to generate quizes and challenges for students of all grades!</p>
+          <p class="text-muted">Written by: Jaden Fang and Evan Li</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item text-center">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="dish_finder.png" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Geo-Guesser</h4>
+          <p class="text-muted">A geopgraphy guessing game using Google Maps API</p>
+          <p class="text-muted">Written by: Adhvik Harikrishnan, Aditya Iyer and Adrian Tsien </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item text-center">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="dish_finder.png" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>ASL App</h4>
+          <p class="text-muted">Learn and Practice your ASL (American Sign Language) with AI</p>
+          <p class="text-muted">Written by: Avinash Senthil and Varun Dhiman</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item text-center">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="dish_finder.png" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Testlet</h4>
+          <p class="text-muted">Generate flash cards using AI or create-your-own flash cards</p>
+          <p class="text-muted">Written by: Rian Butala and Jimmy Ning</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item text-center">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="dish_finder.png" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Habit Tracker</h4>
+          <p class="text-muted">Helps manage your schedule with reminders and rewards</p>
+          <p class="text-muted">Written by: Sushant Pisupati and Rachel (Ruiqian) Li</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item text-center">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="dish_finder.png" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Flavored Miles</h4>
+          <p class="text-muted">A point-of-sale ordering system for food vendors</p>
+          <p class="text-muted">Written by: Ethan Chang and Vivan Jena</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item text-center">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="dish_finder.png" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Tiny Health</h4>
+          <p class="text-muted">Advice, tips, and health monitoring for newborns</p>
+          <p class="text-muted">Written by: Rachel Ngo and Samantha Regi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>Created for the 2023-204 Stratford Prep Android App Dev Class</p>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
